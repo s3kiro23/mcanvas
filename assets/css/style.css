@@ -1,0 +1,77 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+}
+
+.shape {
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin: auto;
+}
+
+.cases {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px;
+    width: 310px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.info-players{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.player{
+    color: blue;
+}
+
+.p1::after{
+    content: ' X';
+    color: blue;
+}
+
+.p2::after{
+    content: ' O';
+    color: red;
+}
+
+.winningCases{
+    background-color: lightseagreen;
+}
+
+.winner {
+    color: lightseagreen;
+}
+
+#rounds {
+    color: lightslategray;
+}
+

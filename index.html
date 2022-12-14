@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="src/script.js" async></script>
+    <title>Morpion Canvas</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Morpion Canvas</h1>
+    </div>
+    <div id="board">
+        <div class="row1">
+            <canvas id="case1" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case2" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case3" class="cases" width="100px" height="100px"></canvas>
+        </div>
+        <div class="row2">
+            <canvas id="case4" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case5" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case6" class="cases" width="100px" height="100px"></canvas>
+        </div>
+        <div class="row3">
+            <canvas id="case7" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case8" class="cases" width="100px" height="100px"></canvas>
+            <canvas id="case9" class="cases" width="100px" height="100px"></canvas>
+        </div>
+    </div>
+    <div class="button">
+        <button onclick="restart();" id="restart">New game</button>
+        <button onclick="change_mode();" id="mode">PvP</button>
+    </div>
+    <div class="info">
+        <div class="info-players">
+            <span class="p1">P1 =</span>
+            <span class="p2">P2 =</span>
+        </div>
+        <span id="rounds"></span>
+        <span id="playerTurn"></span>
+    </div>
+    <!-- <canvas id="sh" class="shape"></canvas> -->
+</body>
+</html>
